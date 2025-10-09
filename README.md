@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website - Eshan Bhuse
 
-## Getting Started
+This is my personal portfolio website built with Next.js. It showcases my projects, skills, certificates, and contact information in a responsive and modern layout.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The website includes the following sections:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Home:** Introduction and a brief about me.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**Journey:** Highlights my learning path and professional growth.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Certificates:** Carousel showcasing my achievements.
 
-## Learn More
+**Experience:** Details of my professional and internship experience.
 
-To learn more about Next.js, take a look at the following resources:
+**Projects:** A showcase of projects with links and descriptions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Contact:** Form and contact information to get in touch.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The website is designed to be responsive and works well on mobile, tablet, and desktop devices.
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Next.js** - Framework for React for building static and server-rendered applications.  
+**React** - UI library for building interactive components.  
+**Tailwind** - Use tailwind for mobile-first approach.  
+**Framer Motion** - Animations and transitions.  
+**AWS Amplify** - For deployment of the website.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Features
+
+**Responsive Design:** Optimized for all screen sizes.  
+**Animations:** Smooth transitions using Framer Motion.  
+**Certificate Carousel:** Interactive slider for showcasing certificates.  
+**Projects Showcase:** Clickable projects with descriptions and links.  
+**Contact Form:** Simple form to get in touch directly.  
+
+---
+
+Thank you for visiting my portfolio! I hope it gives you a clear insight into my skills, projects, and journey as a developer. I’m always eager to learn, collaborate, and take on new challenges.  
+
+Feel free to explore the projects, check out my certificates, or get in touch through the contact section. Your feedback and opportunities to collaborate are always welcome!
+
