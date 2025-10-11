@@ -1112,6 +1112,9 @@ video {
 .pt-10 {
   padding-top: 2.5rem;
 }
+.pt-20 {
+  padding-top: 5rem;
+}
 .text-center {
   text-align: center;
 }
@@ -1372,8 +1375,29 @@ html, body {
     display: none;
   }
 
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .md\:pt-80 {
+    padding-top: 20rem;
+  }
+
+  .md\:pt-60 {
+    padding-top: 15rem;
   }
 
   .md\:text-2xl {
@@ -1395,6 +1419,10 @@ html, body {
     gap: 2rem;
   }
 
+  .lg\:gap-6 {
+    gap: 1.5rem;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1402,6 +1430,10 @@ html, body {
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pt-20 {
+    padding-top: 5rem;
   }
 
   .lg\:text-\[66px\] {
