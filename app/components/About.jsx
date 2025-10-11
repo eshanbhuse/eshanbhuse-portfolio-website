@@ -53,7 +53,7 @@ const About = ({ isDarkMode }) => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="flex-1"
         >
-          <p className="mb-10 max-w-2xl font-Ovo">
+          <p className="mb-10 max-w-2.5xl font-Ovo">
             Hello! I'm Eshan Bhuse, a passionate and dedicated full-stack developer pursued my B.Tech Degree from Sardar Patel Institute of Technology.
             With a strong foundation in both
             front-end and back-end technologies, I specialize in creating
