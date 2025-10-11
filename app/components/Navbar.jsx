@@ -37,8 +37,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             className=" cursor-pointer mr-14 w-28"
           />
         </a>
-        <ul className={`hidden md:flex items-center gap-4 md:px-4 md:text-sm lg:gap-6 rounded-full px-12 py-3 whitespace-nowrap overflow-hidden 
-  flex-nowrap ${isScroll ? '' : 'bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent' } `}>
+        <ul className={`hidden md:flex items-center gap-4 md:px-4 md:text-sm lg:gap-6 rounded-full px-12 py-3  ${isScroll ? '' : 'bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent' } `}>
           <li>
             <a className="font-Ovo" href="#top">
               Home
