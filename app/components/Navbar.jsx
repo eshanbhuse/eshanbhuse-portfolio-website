@@ -29,7 +29,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         <Image src={assets.header_bg_color} alt="" className="w-full" />
       </div>
 
-      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20' : '' }`}>
+      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4  flex items-center justify-between z-50  gap-4 md:gap-6 lg:gap-8 ${isScroll ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20' : '' }`}>
         <a href="#top">
           <Image
             src={ isDarkMode ? assets.logo_dark : assets.logo}
@@ -37,7 +37,8 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             className=" cursor-pointer mr-14 w-28"
           />
         </a>
-        <ul className={`hidden md:flex items-center gap-4 md:px-6 lg:gap-6 rounded-full px-12 py-3 ${isScroll ? '' : 'bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent' } `}>
+        <ul className={`hidden md:flex items-center gap-4 md:px-4 md:text-sm lg:gap-6 rounded-full px-12 py-3 whitespace-nowrap overflow-hidden 
+  flex-nowrap ${isScroll ? '' : 'bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent' } `}>
           <li>
             <a className="font-Ovo" href="#top">
               Home
@@ -74,7 +75,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             </a>
           </li>
         </ul>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center ml-auto">
           <button onClick={() => setIsDarkMode(prev => !prev)}>
             <Image src={ isDarkMode ? assets.sun_icon : assets.moon_icon} alt="" className="w-6" />
           </button>
