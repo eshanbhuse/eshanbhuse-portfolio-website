@@ -573,6 +573,10 @@ img, video {
   height: 100vh;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -987,8 +991,12 @@ img, video {
   padding-left: 1rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -1280,6 +1288,10 @@ img, video {
     display: none;
   }
 
+  .md\:pt-20 {
+    padding-top: 5rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1302,6 +1314,10 @@ img, video {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0;
   }
 
   .lg\:text-\[66px\] {
