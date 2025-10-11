@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 const Header = () => {
   return (
     <div
-      className="w-11/12 max-w-3xl text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-4 pt-10 md:pt-0 lg:pt-0"
+      className="w-11/12 max-w-3xl text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-4 pt-20 md:pt-0 lg:pt-0"
       id="top"
     >
       <motion.div
