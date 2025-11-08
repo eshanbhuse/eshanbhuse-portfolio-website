@@ -104,28 +104,28 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'AI Voice Dental Assistant',
-        description: 'Website Development',
+        title: 'AIVADENT-AI-Enabled Clinical  Support',
+        description: 'Web Development',
         bgImage: '/work-1.png',
-        link: ''
+        link: 'https://aivadent.info/'
     },
     {
         title: 'AI Powered Interview Prep',
-        description: 'Website Development',
+        description: 'Web Development',
         bgImage: '/work-2.png',
         link: 'https://al-based-interview-preparation-frontend-71c1.onrender.com/'
     },
     {
-        title: 'Expense Tracker',
-        description: 'Website Development',
+        title: 'Vampyrion-Eclipse (Game)',
+        description: 'Game Development',
         bgImage: '/work-3.png',
-        link: 'https://eshanbhuse-expense-tracker.online/'
+        link: 'https://github.com/eshanbhuse/Vampyrion-Eclipse'
     },
     {
-        title: 'Yoga pose estimation',
-        description: 'Website Development',
+        title: 'Multi-Disease Diagnosis System using Clinical Data',
+        description: 'Web Development and Machine Learning',
         bgImage: '/work-4.png',
-        link: ''
+        link: 'https://multi-disease-diagnosis-system-usin.vercel.app/'
     },
 ]
 

@@ -1402,10 +1402,6 @@ html, body {
     flex-direction: row;
   }
 
-  .lg\:gap-6 {
-    gap: 1.5rem;
-  }
-
   .lg\:gap-8 {
     gap: 2rem;
   }
