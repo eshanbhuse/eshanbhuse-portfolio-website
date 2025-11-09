@@ -239,7 +239,7 @@ export const certificatesData = [
     link: "https://drive.google.com/file/d/1M-eHXR1MEq-s0ubwPQO5XF19GuN3QqFb/view",
   },
   {
-    title: "React - The Complete Guide 2025(incl. Next.js , Redux)",
+    title: "React-The Complete Guide 2025(incl.Next.js,Redux)",
     issuer: "Udemy",
     date: "May 2025",
     image: "/react.png",
