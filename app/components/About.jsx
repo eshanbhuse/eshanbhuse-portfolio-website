@@ -59,8 +59,8 @@ const About = ({ isDarkMode }) => {
             front-end and back-end technologies, I specialize in creating
             dynamic and responsive web applications that deliver seamless user
             experiences. My expertise includes proficiency in programming
-            languages such as JavaScript and Python, as well as frameworks like
-            React and Node.js. I am committed to writing high-quality code and
+            languages such as JavaScript and Java, as well as frameworks like
+            React and Springboot. I am committed to writing high-quality code and
             developing innovative solutions that meet client needs. When I'm not
             coding, I enjoy exploring new technologies, contributing to
             open-source projects, and continuously enhancing my skills to stay

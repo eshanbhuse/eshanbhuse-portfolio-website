@@ -41,8 +41,8 @@ const Header = () => {
         I am a passionate and dedicated full-stack developer with expertise in
         both front-end and back-end technologies. I love creating dynamic and
         responsive web applications that provide seamless user experiences. With
-        a strong foundation in programming languages such as JavaScript, Python,
-        and frameworks like React and Node.js, I am committed to delivering
+        a strong foundation in programming languages such as JavaScript, Java
+        and frameworks like React and Springboot, I am committed to delivering
         high-quality code and innovative solutions.
       </motion.p>
       <div className="flex flex-col items-center gap-4 mt-4 sm:flex-row">
@@ -60,7 +60,7 @@ const Header = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          href="/eshanbhuse-resume.pdf"
+          href="/eshanbhuse_resume.pdf"
           download
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
         >
