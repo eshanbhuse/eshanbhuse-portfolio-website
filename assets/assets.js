@@ -31,6 +31,10 @@ import web_icon from './web-icon.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
+import web_icon_dark from './web-icon-dark.png';
+import mobile_icon_dark from './mobile-icon-dark.png';
+import ui_icon_dark from './ui-icon-dark.png';
+import graphics_icon_dark from './graphics-icon-dark.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
@@ -88,6 +92,10 @@ export const assets = {
     mobile_icon,
     ui_icon,
     graphics_icon,
+     web_icon_dark,
+    mobile_icon_dark,
+    ui_icon_dark,
+    graphics_icon_dark,
     right_arrow,
     send_icon,
     right_arrow_bold,
@@ -130,10 +138,14 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Creating responsive, modern, and user-friendly websites with clean UI, optimized performance, and scalable architecture.', link: 'https://github.com/eshanbhuse' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Building cross-platform mobile applications with intuitive interfaces, smooth performance, and modern development practices.', link: 'https://github.com/eshanbhuse' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'Working with MySQL and relational databases for efficient data storage, querying, and application performance.', link: 'https://github.com/eshanbhuse' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: 'https://github.com/eshanbhuse' },
+    { icon: assets.web_icon, hoverIcon: assets.web_icon_dark,
+ title: 'Web design', description: 'Creating responsive, modern, and user-friendly websites with clean UI, optimized performance, and scalable architecture.', link: 'https://github.com/eshanbhuse' },
+    { icon: assets.mobile_icon, hoverIcon: assets.mobile_icon_dark,
+ title: 'Mobile app', description: 'Building cross-platform mobile applications with intuitive interfaces, smooth performance, and modern development practices.', link: 'https://github.com/eshanbhuse' },
+    { icon: assets.ui_icon, hoverIcon: assets.ui_icon_dark,
+ title: 'Database Optimization', description: 'Working with MySQL and relational databases for efficient data storage, querying, and application performance.', link: 'https://github.com/eshanbhuse' },
+    { icon: assets.graphics_icon,hoverIcon: assets.graphics_icon_dark,
+ title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: 'https://github.com/eshanbhuse' },
 ]
 
 export const infoList = [
