@@ -10,13 +10,13 @@ const Services = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="services"
-      className="w-full px-[12%] py-10 scroll-mt-20"
+      className="w-full px-[12%] py-10 scroll-mt-20 bg-darkTheme"
     >
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className="text-center mb-2 text-lg font-Ovo"
+        className="text-center mb-2 text-lg font-Ovo text-white"
       >
         What I Offer
       </motion.h4>
@@ -24,7 +24,7 @@ const Services = () => {
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-5xl font-Ovo"
+        className="text-center text-5xl font-Ovo text-white"
       >
         My Services
       </motion.h2>
@@ -33,7 +33,7 @@ const Services = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
+        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-white"
       >
         I offer a range of services to help businesses and individuals establish
         a strong online presence and achieve their digital goals. My services
@@ -49,16 +49,16 @@ const Services = () => {
           <motion.div
             whileHover={{ scale: 1.05 }}
             key={index} 
-            className=" group border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:bg-lightHover"
+            className=" group border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black "
           >
             <Image src={icon} alt="" className="w-10" />
-            <h3 className="text-black my-4 text-lg dark:text-white dark:group-hover:text-black">
+            <h3 className=" my-4 text-lg text-white group-hover:text-black">
               {title}
             </h3>
-            <p className="text-black leading-5 text-sm dark:text-white/80 dark:group-hover:text-black">
+            <p className=" leading-5 text-sm text-white group-hover:text-black ">
               {description}
             </p>
-            <a href={link} target="_blank" className="flex items-center gap-2 text-sm mt-5 dark:group-hover:text-black">
+            <a href={link} target="_blank" className="flex items-center gap-2 text-sm mt-5 text-white group-hover:text-black ">
               Read More{" "}
               <Image alt="" src={assets.right_arrow} className="w-4" />
             </a>

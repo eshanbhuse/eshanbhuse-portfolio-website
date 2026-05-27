@@ -80,10 +80,10 @@ const Contact = () => {
             type="text"
             placeholder="Enter your name"
             required
-            className="font-Ovo flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md dark:border-gray-600 bg-transparent transition-all duration-300 focus:outline-none
+            className="font-Ovo flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md  bg-transparent transition-all duration-300 focus:outline-none
 focus:ring-1
 focus:ring-black
-focus:border-black dark:focus:border-white"
+focus:border-black"
             name="name"
           />
           <motion.input
@@ -93,11 +93,10 @@ focus:border-black dark:focus:border-white"
             type="email"
             placeholder="Enter your email"
             required
-            className="font-Ovo flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md dark:border-gray-600 bg-transparent transition-all focus:outline-none
+            className="font-Ovo flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md  bg-transparent transition-all focus:outline-none
 focus:border-black
 focus:ring-1
-focus:ring-black duration-300
- dark:focus:border-white"
+focus:ring-black duration-300"
             name="email"
           />
         </div>
@@ -108,19 +107,18 @@ focus:ring-black duration-300
           rows="6"
           placeholder="Enter your message"
           required
-          className="font-Ovo w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md dark:border-gray-600 bg-transparent transition-all focus:outline-none
+          className="font-Ovo w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md  bg-transparent transition-all focus:outline-none
 
 focus:ring-1
 focus:ring-black duration-300
-focus:border-black dark:focus:border-white"
+focus:border-black"
           name="message"
         ></motion.textarea>
         <motion.button
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           type="submit"
-          className="font-Ovo py-3 px-8 w-max flex items-center justify-between gap-2 rounded-full mx-auto transition-all duration-500 bg-black text-white
-dark:bg-white dark:text-black "
+          className="font-Ovo py-3 px-8 w-max flex items-center justify-between gap-2 rounded-full mx-auto transition-all duration-500 bg-black text-white"
         >
           Submit Now{" "}
           <Image src={assets.right_arrow_bold} alt="" className="w-4" />{" "}

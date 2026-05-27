@@ -3,20 +3,20 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "motion/react";
 
-const About = ({ isDarkMode }) => {
+const About = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="about"
-      className="w-full px-[12%] py-10 scroll-mt-20"
+      className="w-full px-[12%] py-10 scroll-mt-20 bg-darkTheme"
     >
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className="text-center mb-2 text-lg font-Ovo"
+        className="text-center mb-2 text-lg font-Ovo text-white"
       >
         Introduction
       </motion.h4>
@@ -24,7 +24,7 @@ const About = ({ isDarkMode }) => {
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-5xl font-Ovo"
+        className="text-center text-5xl font-Ovo text-white"
       >
         About Me
       </motion.h2>
@@ -53,7 +53,7 @@ const About = ({ isDarkMode }) => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="flex-1"
         >
-          <p className="mb-10 max-w-2.5xl font-Ovo">
+          <p className="mb-10 max-w-2.5xl font-Ovo text-white">
             Hello! I'm Eshan Bhuse, a Java Developer, pursued my B.Tech Degree from Sardar Patel Institute of Technology.
             With a strong foundation in both
             front-end and back-end technologies, I specialize in creating backend logic for web applications that deliver seamless user
@@ -75,17 +75,17 @@ const About = ({ isDarkMode }) => {
               <motion.li
                 whileHover={{ scale: 1.05 }}
                 key={index}
-                className=" group border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:bg-lightHover dark:hover:shadow-black "
+                className="group border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white "
               >
                 <Image
-                  src={isDarkMode ? iconDark : icon}
+                  src={iconDark}
                   alt={title}
                   className="w-7 mt-3"
                 />
-                <h3 className="text-black my-4 font-semibold dark:text-white dark:group-hover:text-black">
+                <h3 className="text-black my-4 font-semibold text-white group-hover:text-black">
                   {title}
                 </h3>
-                <p className="text-black text-sm dark:text-white/80 dark:group-hover:text-black/80" >
+                <p className="text-black text-sm text-white group-hover:text-black" >
                   {description}
                 </p>
               </motion.li>
@@ -96,7 +96,7 @@ const About = ({ isDarkMode }) => {
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 1.3 }}
-            className="my-6 text-black font-Ovo dark:text-white"
+            className="my-6  font-Ovo text-white"
           >
             Tools I Use
           </motion.h4>
@@ -109,7 +109,7 @@ const About = ({ isDarkMode }) => {
           >
             {toolsData.map((tool, index) => (
               <motion.li                
-                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-black dark:border-white rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+                className="flex items-center justify-center w-12 sm:w-14 aspect-square border  border-white rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
                 whileInView={{ scale: 1.1 }}
                 key={index}
               >

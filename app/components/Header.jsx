@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 const Header = () => {
   return (
     <div
-      className="w-11/12 max-w-2.5xl text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-4 pt-20 md:pt-0 lg:pt-0"
+      className="w-11/12 max-w-2.5xl text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-4 pt-20 md:pt-0 lg:pt-0 "
       id="top"
     >
       <motion.div
@@ -60,7 +60,7 @@ const Header = () => {
           transition={{ duration: 0.2}}
           href="/eshanbhuse-resume.pdf"
           download
-          className="group  px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black transition-transform duration-300 hover:-translate-y-1"
+          className="group  px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white transition-transform duration-300 hover:-translate-y-1"
         >
           Download Resume{" "}
           <Image src={assets.download_icon} alt="" className="w-4  " />
@@ -71,3 +71,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

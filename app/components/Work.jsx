@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "motion/react";
 
-const Work = ({ isDarkMode }) => {
+const Work = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -42,7 +42,7 @@ const Work = ({ isDarkMode }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
-        className="grid grid-cols-auto gap-5 my-10 dark:text-black"
+        className="grid grid-cols-auto gap-5 my-10 "
       >
         {workData.map((project, index) => (
           <motion.div
@@ -71,12 +71,12 @@ const Work = ({ isDarkMode }) => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1.1 }}
         href="https://github.com/eshanbhuse" target="_blank"
-        className="w-max flex items-center justify-center gap-2 text-black border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20  duration-500 dark:text-white dark:border-white"
+        className="w-max flex items-center justify-center gap-2 text-black border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20  duration-500 "
       >
         Show More{" "}
         <Image
           src={
-            isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold
+            assets.right_arrow_bold
           }
           alt=""
           className="w-4"

@@ -31,13 +31,13 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4  flex items-center justify-between z-50  gap-4 md:gap-6 lg:gap-8 ${
           isScroll
-            ? "bg-white bg-opacity-40 backdrop-blur-lg shadow-md dark:bg-darkTheme dark:shadow-white/20"
+            ? "bg-white bg-opacity-40 backdrop-blur-lg shadow-md "
             : ""
         }`}
       >
         <a href="#top">
           <Image
-            src={isDarkMode ? assets.logo_dark : assets.logo}
+            src={assets.logo}
             alt=""
             className=" cursor-pointer mr-14 w-28"
           />
@@ -86,13 +86,13 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           </li>
         </ul>
         <div className="flex items-center gap-4">
-          <button onClick={() => setIsDarkMode((prev) => !prev)}>
+          {/* <button onClick={() => setIsDarkMode((prev) => !prev)}>
             <Image
               src={isDarkMode ? assets.sun_icon : assets.moon_icon}
               alt=""
               className="w-6"
             />
-          </button>
+          </button> */}
 
           <a
             href="#contact"
@@ -100,14 +100,14 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           >
             Contact{" "}
             <Image
-              src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
+              src={assets.arrow_icon}
               alt=""
               className="w-3"
             />
           </a>
           <button className="md:hidden block ml-3" onClick={openMenu}>
             <Image
-              src={isDarkMode ? assets.menu_white : assets.menu_black}
+              src={assets.menu_black}
               alt=""
               className="w-6"
             />
@@ -115,7 +115,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         </div>
         <ul
           ref={sideMenuRef}
-          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-[#ebebeb] transition duration-500 dark:bg-darkHover dark:text-black"
+          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-[#ebebeb] transition duration-500"
         >
           <div className="absolute top-6 right-6" onClick={closeMenu}>
             <Image

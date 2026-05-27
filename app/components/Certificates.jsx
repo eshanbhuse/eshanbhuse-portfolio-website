@@ -128,7 +128,7 @@ import Splide from "@splidejs/splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/css"; 
 
-const Certificates = ({ isDarkMode }) => {
+const Certificates = () => {
   const splideRef = useRef(null);
 
   useEffect(() => {
@@ -163,7 +163,7 @@ const Certificates = ({ isDarkMode }) => {
   return (
     <motion.section
       id="certificates"
-      className="w-full px-[8%] py-16 scroll-mt-20"
+      className="w-full px-[8%] py-16 scroll-mt-20 bg-darkTheme"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -172,7 +172,7 @@ const Certificates = ({ isDarkMode }) => {
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-center mb-2 text-lg font-Ovo"
+        className="text-center mb-2 text-lg font-Ovo text-white"
       >
         Certificates
       </motion.h4>
@@ -181,7 +181,7 @@ const Certificates = ({ isDarkMode }) => {
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="text-center text-4xl sm:text-5xl font-Ovo mb-12 sm:mb-16"
+        className="text-center text-4xl sm:text-5xl font-Ovo mb-12 text-white sm:mb-16"
       >
         My Achievements
       </motion.h2>
@@ -195,7 +195,7 @@ const Certificates = ({ isDarkMode }) => {
                 <motion.div
                   whileHover={{ scale: 1, y: -6 }}
                   transition={{ duration: 0.1 }}
-                  className="border border-black rounded-xl p-6 cursor-pointer hover:bg-lightHover dark:hover:bg-lightHover dark:border-white text-center bg-transparent shadow-md duration-500 group "
+                  className="border border-white rounded-xl p-6 cursor-pointer hover:bg-lightHover text-center bg-transparent shadow-md duration-500 group "
                 >
                   <div className="flex justify-center mb-4">
                     <Image
@@ -203,20 +203,20 @@ const Certificates = ({ isDarkMode }) => {
                       alt={cert.title}
                       width={320}
                       height={220}
-                      className="rounded-md border border-black dark:border-white shadow-md"
+                      className="rounded-md border border-white shadow-md"
                     />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold dark:text-white dark:group-hover:text-black">
+                  <h3 className="text-lg sm:text-xl font-semibold text-white group-hover:text-black">
                     {cert.title}
                   </h3>
-                  <p className="text-black mt-2 dark:text-white dark:group-hover:text-black">{cert.issuer}</p>
-                  <p className="text-sm text-black mb-4 dark:text-white dark:group-hover:text-black">{cert.date}</p>
+                  <p className="text-white mt-2  group-hover:text-black">{cert.issuer}</p>
+                  <p className="text-sm mb-4 text-white group-hover:text-black">{cert.date}</p>
 
                   <a
                     href={cert.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block mt-2 py-2 bg-[#000000] text-white dark:text-black dark:bg-[#ffffff] rounded-full mx-auto hover:bg-[#000000] duration-500 w-3/4 sm:w-2/3 dark:group-hover:text-white dark:group-hover:bg-black"
+                    className="block mt-2 py-2 bg-[#ffffff]  text-black  rounded-full mx-auto hover:bg-[#ffffff] duration-500 w-3/4 sm:w-2/3 group-hover:text-white group-hover:bg-black"
                   >
                     View Certificate{" "}
                     <FaExternalLinkAlt className="inline ml-2 text-sm" />

@@ -34,7 +34,7 @@ const MyJourney = ({ isDarkMode }) => {
       {/* Timeline container (now responsive) */}
       <div className="relative flex flex-col items-center">
         {/* Responsive center line */}
-        <div className="absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-[2px] dark:bg-[#eeeeee]/70 hidden sm:block bg-[#000000]"   />
+        <div className="absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-[2px] hidden sm:block bg-[#000000]"   />
 
         <div className="flex flex-col gap-16 w-full relative">
           {journeyData.map((item, index) => (
@@ -49,7 +49,7 @@ const MyJourney = ({ isDarkMode }) => {
             >
               {/* Dot on timeline */}
               <span
-                className="hidden sm:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 dark:bg-[#eeeeee] rounded-full dark:shadow-[0_0_15px_#eeeeee] bg-[#000000] shadow-[0_0_15px_#000000]"
+                className="hidden sm:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4  rounded-full dark:shadow-[0_0_15px_#eeeeee] bg-[#000000] shadow-[0_0_15px_#000000]"
                 style={{ top: "50%" }}
               ></span>
 
@@ -57,10 +57,10 @@ const MyJourney = ({ isDarkMode }) => {
               <motion.div
                 whileHover={{ scale: 1.05, y: -6 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className={`w-[90%] sm:w-[45%] bg-transparent border border-gray-400 dark:border-gray-400 rounded-xl p-6 cursor-pointer duration-500 group 
+                className={`w-[90%] sm:w-[45%] bg-transparent border border-gray-400  rounded-xl p-6 cursor-pointer duration-500 group 
                 ${
                   index % 2 === 0 ? "sm:mr-auto" : "sm:ml-auto"
-                } border-[0.5px] border-gray-400 dark:border-gray-400  rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:bg-lightHover group "`}
+                } border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black  group "`}
               >
                 <div className=" flex items-center gap-3 mb-2">
                   <Image
@@ -68,12 +68,12 @@ const MyJourney = ({ isDarkMode }) => {
                     alt=""
                     className="w-8 h-8"
                   />
-                  <h3 className="text-black text-xl font-semibold dark:text-white dark:group-hover:text-black">
+                  <h3 className="text-black text-xl font-semibold ">
                     {item.title}
                   </h3>
                 </div>
-                <p className="text-black dark:text-white text-sm mb-2 dark:group-hover:text-black">{item.timeframe}</p>
-                <ul className="list-disc pl-4 space-y-1 text-sm dark:group-hover:text-black">
+                <p className="text-black text-sm mb-2 ">{item.timeframe}</p>
+                <ul className="list-disc pl-4 space-y-1 text-sm ">
                   {item.description.map((point, i) => (
                     <li key={i}>{point}</li>
                   ))}
