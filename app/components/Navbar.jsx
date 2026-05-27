@@ -25,13 +25,13 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   return (
     <>
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
-        <Image src={assets.header_bg_color} alt="" className="w-full" />
+        {/* <Image src={assets.header_bg_color} alt="" className="w-full" /> */}
       </div>
 
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4  flex items-center justify-between z-50  gap-4 md:gap-6 lg:gap-8 ${
           isScroll
-            ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20"
+            ? "bg-white bg-opacity-40 backdrop-blur-lg shadow-md dark:bg-darkTheme dark:shadow-white/20"
             : ""
         }`}
       >
@@ -46,7 +46,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           className={`hidden md:flex items-center gap-4 md:px-4 md:text-sm lg:gap-8 rounded-full px-12 py-3  ${
     isScroll
       ? ""
-      : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"
+      : "bg-white shadow-md bg-opacity-40 dark:border dark:border-white/50 dark:bg-transparent"
   } `}
         >
           <li>
@@ -115,7 +115,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         </div>
         <ul
           ref={sideMenuRef}
-          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white"
+          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-[#ebebeb] transition duration-500 dark:bg-darkHover dark:text-black"
         >
           <div className="absolute top-6 right-6" onClick={closeMenu}>
             <Image

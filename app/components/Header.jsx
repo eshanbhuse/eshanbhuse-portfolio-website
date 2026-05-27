@@ -30,7 +30,7 @@ const Header = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo"
       >
-        Full Stack Developer
+        Java Developer
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
@@ -38,20 +38,17 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="max-w-2xl mx-auto font-Ovo"
       >
-        I am a passionate and dedicated full-stack developer with expertise in
-        both front-end and back-end technologies. I love creating dynamic and
-        responsive web applications that provide seamless user experiences. With
-        a strong foundation in programming languages such as JavaScript, Java
-        and frameworks like React and Springboot, I am committed to delivering
-        high-quality code and innovative solutions.
+        I am a passionate and dedicated Java Developer with expertise in back-end technologies.With
+        a strong foundation in programming languages such as JavaScript, Java and frameworks like React and Springboot, I am committed to delivering high-quality optimized code.
       </motion.p>
       <div className="flex flex-col items-center gap-4 mt-4 sm:flex-row">
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1 }}
+          whileHover={{ y: -6 }}
+          transition={{ duration: 0.2}}
           href="#contact"
-          className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent"
+          className="group px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2  transition-transform duration-300 hover:-translate-y-1"
         >
           Contact Me
           <Image src={assets.right_arrow_white} alt="" className="w-4" />
@@ -59,13 +56,14 @@ const Header = () => {
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1.2 }}
+          whileHover={{ y: -6 }}
+          transition={{ duration: 0.2}}
           href="/eshanbhuse-resume.pdf"
           download
-          className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
+          className="group  px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black transition-transform duration-300 hover:-translate-y-1"
         >
           Download Resume{" "}
-          <Image src={assets.download_icon} alt="" className="w-4" />
+          <Image src={assets.download_icon} alt="" className="w-4  " />
         </motion.a>
       </div>
     </div>

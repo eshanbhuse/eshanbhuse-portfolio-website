@@ -57,9 +57,9 @@ const Work = ({ isDarkMode }) => {
                 <h2 className="font-semibold">{project.title}</h2>
                 <p className="text-sm text-gray-700">{project.description}</p>
               </div>
-              <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+              <div className="">
                 <a href={project.link} target="_blank" className="">
-                <Image src={assets.send_icon} alt="" className="w-5" />
+                {/* <Image src={assets.send_icon} alt="" className="w-5" /> */}
                 </a>
               </div>
             </div>
@@ -71,7 +71,7 @@ const Work = ({ isDarkMode }) => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1.1 }}
         href="https://github.com/eshanbhuse" target="_blank"
-        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover"
+        className="w-max flex items-center justify-center gap-2 text-black border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20  duration-500 dark:text-white dark:border-white"
       >
         Show More{" "}
         <Image

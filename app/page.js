@@ -41,6 +41,15 @@ export default function Home() {
     <Certificates isDarkMode={isDarkMode}/>
     <Contact isDarkMode={isDarkMode}/>
     <Footer isDarkMode={isDarkMode}/>
+    {/* <Navbar />
+    <Header />
+    <About />
+    <MyJourney />
+    <Services />
+    <Work />
+    <Certificates />
+    <Contact />
+    <Footer /> */}
     </>
   )
 

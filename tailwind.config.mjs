@@ -5,12 +5,13 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     extend: {
       colors: {
-        lightHover: '#fcf4ff',
-        darkHover: '#40006A',
-        darkTheme: '#0D0018',
+         lightHover: '#ebebeb',
+          darkHover: '#ebebeb',
+          darkTheme: '#000000',
       },
       fontFamily: {
         Outfit: ['Outfit', 'sans-serif'],

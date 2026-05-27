@@ -48,17 +48,17 @@ const Services = () => {
         {serviceData.map(({ icon, title, description, link }, index) => (
           <motion.div
             whileHover={{ scale: 1.05 }}
-            key={index}
-            className="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:bg-darkHover dark:hover:shadow-white"
+            key={index} 
+            className=" group border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:bg-lightHover"
           >
             <Image src={icon} alt="" className="w-10" />
-            <h3 className="text-gray-700 my-4 text-lg dark:text-white">
+            <h3 className="text-black my-4 text-lg dark:text-white dark:group-hover:text-black">
               {title}
             </h3>
-            <p className="text-gray-600 leading-5 text-sm dark:text-white/80">
+            <p className="text-black leading-5 text-sm dark:text-white/80 dark:group-hover:text-black">
               {description}
             </p>
-            <a href={link} className="flex items-center gap-2 text-sm mt-5">
+            <a href={link} target="_blank" className="flex items-center gap-2 text-sm mt-5 dark:group-hover:text-black">
               Read More{" "}
               <Image alt="" src={assets.right_arrow} className="w-4" />
             </a>

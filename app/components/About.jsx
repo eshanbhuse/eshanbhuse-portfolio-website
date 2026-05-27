@@ -54,14 +54,12 @@ const About = ({ isDarkMode }) => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2.5xl font-Ovo">
-            Hello! I'm Eshan Bhuse, a passionate and dedicated full-stack developer pursued my B.Tech Degree from Sardar Patel Institute of Technology.
+            Hello! I'm Eshan Bhuse, a Java Developer, pursued my B.Tech Degree from Sardar Patel Institute of Technology.
             With a strong foundation in both
-            front-end and back-end technologies, I specialize in creating
-            dynamic and responsive web applications that deliver seamless user
+            front-end and back-end technologies, I specialize in creating backend logic for web applications that deliver seamless user
             experiences. My expertise includes proficiency in programming
             languages such as JavaScript and Java, as well as frameworks like
-            React and Springboot. I am committed to writing high-quality code and
-            developing innovative solutions that meet client needs. When I'm not
+            React and Springboot. I also use Docker for containerization of appications, using Microservices for better code optimization and Redis for caching.  When I'm not
             coding, I enjoy exploring new technologies, contributing to
             open-source projects, and continuously enhancing my skills to stay
             at the forefront of the ever-evolving tech landscape.
@@ -77,17 +75,17 @@ const About = ({ isDarkMode }) => {
               <motion.li
                 whileHover={{ scale: 1.05 }}
                 key={index}
-                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:bg-darkHover/50  dark:hover:shadow-white"
+                className=" group border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:bg-lightHover dark:hover:shadow-black "
               >
                 <Image
                   src={isDarkMode ? iconDark : icon}
                   alt={title}
                   className="w-7 mt-3"
                 />
-                <h3 className="text-gray-700 my-4 font-semibold dark:text-white">
+                <h3 className="text-black my-4 font-semibold dark:text-white dark:group-hover:text-black">
                   {title}
                 </h3>
-                <p className="text-gray-600 text-sm dark:text-white/80">
+                <p className="text-black text-sm dark:text-white/80 dark:group-hover:text-black/80" >
                   {description}
                 </p>
               </motion.li>
@@ -98,7 +96,7 @@ const About = ({ isDarkMode }) => {
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 1.3 }}
-            className="my-6 text-gray-700 font-Ovo dark:text-white/80"
+            className="my-6 text-black font-Ovo dark:text-white"
           >
             Tools I Use
           </motion.h4>
@@ -111,7 +109,7 @@ const About = ({ isDarkMode }) => {
           >
             {toolsData.map((tool, index) => (
               <motion.li                
-                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-black dark:border-white rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
                 whileInView={{ scale: 1.1 }}
                 key={index}
               >

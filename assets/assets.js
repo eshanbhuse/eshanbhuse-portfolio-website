@@ -130,10 +130,10 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web design', description: 'Creating responsive, modern, and user-friendly websites with clean UI, optimized performance, and scalable architecture.', link: 'https://github.com/eshanbhuse' },
+    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Building cross-platform mobile applications with intuitive interfaces, smooth performance, and modern development practices.', link: 'https://github.com/eshanbhuse' },
+    { icon: assets.ui_icon, title: 'UI/UX design', description: 'Working with MySQL and relational databases for efficient data storage, querying, and application performance.', link: 'https://github.com/eshanbhuse' },
+    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: 'https://github.com/eshanbhuse' },
 ]
 
 export const infoList = [
