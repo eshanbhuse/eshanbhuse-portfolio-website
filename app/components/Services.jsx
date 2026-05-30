@@ -11,7 +11,7 @@ const Services = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      id="services"
+      id="services" data-theme="black"
       className="w-full px-[12%] py-10 scroll-mt-20 bg-darkTheme"
     >
       <motion.h4

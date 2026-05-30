@@ -9,7 +9,7 @@ const Work = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      id="work"
+      id="work" data-theme="white"
       className="w-full px-[12%] py-10 scroll-mt-20"
     >
       <motion.h4
@@ -45,42 +45,38 @@ const Work = () => {
         className="grid grid-cols-auto gap-5 my-10 "
       >
         {workData.map((project, index) => (
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3}}
-            key={index}
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{ backgroundImage: `url(${project.bgImage})` }}
-          >
-            <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-              <div>
-                <h2 className="font-semibold">{project.title}</h2>
-                <p className="text-sm text-gray-700">{project.description}</p>
+          <a key={index} href={project.link} target="_blank" className=""  rel="noopener noreferrer"
+>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              key={index}
+              className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+              style={{ backgroundImage: `url(${project.bgImage})` }}
+            >
+              <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                  <h2 className="font-semibold">{project.title}</h2>
+                  <p className="text-sm text-gray-700">{project.description}</p>
+                </div>
+                {/* <div className="">
+                <Image src={assets.send_icon} alt="" className="w-5" />
+              </div> */}
               </div>
-              <div className="">
-                <a href={project.link} target="_blank" className="">
-                {/* <Image src={assets.send_icon} alt="" className="w-5" /> */}
-                </a>
-              </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </a>
         ))}
       </motion.div>
       <motion.a
-      initial={{ opacity: 0 }}
+        initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1.1 }}
-        href="https://github.com/eshanbhuse" target="_blank"
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.2 }}
+        href="https://github.com/eshanbhuse"
+        target="_blank"
         className="w-max flex items-center justify-center gap-2 text-black border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20  duration-500 "
       >
-        Show More{" "}
-        <Image
-          src={
-            assets.right_arrow_bold
-          }
-          alt=""
-          className="w-4"
-        />
+        Show More <Image src={assets.right_arrow_bold} alt="" className="w-4" />
       </motion.a>
     </motion.div>
   );

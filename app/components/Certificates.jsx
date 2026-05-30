@@ -162,7 +162,7 @@ const Certificates = () => {
 
   return (
     <motion.section
-      id="certificates"
+      id="certificates" data-theme="black"
       className="w-full px-[8%] py-16 scroll-mt-20 bg-darkTheme"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -193,7 +193,7 @@ const Certificates = () => {
             {certificatesData.map((cert, index) => (
               <li className="splide__slide" key={index}>
                 <motion.div
-                  whileHover={{ scale: 1, y: -6 }}
+                  whileHover={{ scale: 1, y: -2 }}
                   transition={{ duration: 0.1 }}
                   className="border border-white rounded-xl p-6 cursor-pointer hover:bg-lightHover text-center bg-transparent shadow-md duration-500 group "
                 >

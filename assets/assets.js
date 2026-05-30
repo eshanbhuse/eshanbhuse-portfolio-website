@@ -1,10 +1,6 @@
 import user_image from './user-image.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
-import edu_icon from './edu-icon.png';
-import edu_icon_dark from './edu-icon-dark.png';
-import project_icon from './project-icon.png';
-import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
@@ -12,13 +8,11 @@ import git from './git.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
-import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
-import header_bg_color from './header-bg-color.png';
 import moon_icon from './moon_icon.png';
 import sun_icon from './sun_icon.png';
 import arrow_icon from './arrow-icon.png';
@@ -46,21 +40,13 @@ import redis from './redis.png';
 import react from './react.png';
 import start from './start.png';
 import first from './first.png';
-import internship from './internship.png';
 import professional from './professional.png';
-import start_dark from './start_dark.png';
-import first_dark from './first_dark.png';
-import internship_dark from './internship_dark.png';
-import professional_dark from './professional_dark.png';
+import internship from './internship.png';
 
 export const assets = {
     user_image,
     code_icon,
     code_icon_dark,
-    edu_icon,
-    edu_icon_dark,
-    project_icon,
-    project_icon_dark,
     postman,
     docker,
     aws,
@@ -73,13 +59,11 @@ export const assets = {
     mongodb,
     right_arrow_white,
     logo,
-    logo_dark,
     mail_icon,
     mail_icon_dark,
     profile_img,
     download_icon,
     hand_icon,
-    header_bg_color,
     moon_icon,
     sun_icon,
     arrow_icon,
@@ -102,12 +86,8 @@ export const assets = {
     right_arrow_bold_dark,
     start,
     first,
-    internship,
     professional,
-    start_dark,
-    first_dark,
-    internship_dark,
-    professional_dark
+    internship,
 };
 
 export const workData = [
@@ -139,31 +119,31 @@ export const workData = [
 
 export const serviceData = [
     { icon: assets.web_icon, hoverIcon: assets.web_icon_dark,
- title: 'Web design', description: 'Creating responsive, modern, and user-friendly websites with clean UI, optimized performance, and scalable architecture.', link: 'https://github.com/eshanbhuse' },
+ title: 'Web Development', description: 'Developing responsive full-stack applications using React, Java, Spring Boot, and modern web technologies.', link: 'https://github.com/eshanbhuse' },
     { icon: assets.mobile_icon, hoverIcon: assets.mobile_icon_dark,
- title: 'Mobile app', description: 'Building cross-platform mobile applications with intuitive interfaces, smooth performance, and modern development practices.', link: 'https://github.com/eshanbhuse' },
+ title: 'Docker & Deployment', description: 'Containerizing applications using Docker and managing deployment workflows for consistent development environments.', link: 'https://github.com/eshanbhuse' },
     { icon: assets.ui_icon, hoverIcon: assets.ui_icon_dark,
  title: 'Database Optimization', description: 'Working with MySQL and relational databases for efficient data storage, querying, and application performance.', link: 'https://github.com/eshanbhuse' },
     { icon: assets.graphics_icon,hoverIcon: assets.graphics_icon_dark,
- title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: 'https://github.com/eshanbhuse' },
+ title: 'Microservices Architecture', description: 'Creating modular and distributed microservices applications for better scalability, maintainability, and deployment.', link: 'https://github.com/eshanbhuse' },
 ]
 
-export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React Js, Springboot, Tailwind CSS, SQL ' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Engineering' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
-];
+// export const infoList = [
+//     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React Js, Springboot, Tailwind CSS, SQL ' },
+//     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Engineering' },
+//     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+// ];
 
-export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.postman, assets.docker, assets.aws, assets.redis
-];
+// export const toolsData = [
+//     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.postman, assets.docker, assets.aws, assets.redis
+// ];
 
 export const journeyData = [
   {
     title: "Started Learning Programming",
     description:
     [
-      "I began my journey with basic programming concepts in Python and JavaScript.",
+      "I began my journey with basic programming concepts in Java and Python.",
       "Building small projects to understand the fundamentals."
     ],
     timeframe: "2021",
@@ -174,7 +154,7 @@ export const journeyData = [
     title: "Built First Web App",
     description:
     [
-      "Created my first full-stack web application using React and Node.js.",
+      "Created my first full-stack web application using React and Spring Boot.",
       "Integrating APIs and learning database management."
     ],
     timeframe: "2022",
@@ -186,7 +166,7 @@ export const journeyData = [
     title: "Internship & Open Source",
     description:
     [
-      "Contributed to open-source projects and completed an internship.",
+      "Contributed to open-source projects and completed an internship to make fundamentals strong in Networking",
       "Gaining real-world experience in full-stack development."
     ],
     timeframe: "2023-2024",
@@ -195,7 +175,7 @@ export const journeyData = [
  
   },
   {
-    title: "Professional Development",
+    title: "Java Developer - SBI General Insurance",
     description:
     [
       "Working on production-level applications, exploring advanced topics like cloud deployment, performance optimization, and security."
@@ -223,7 +203,7 @@ export const certificatesData = [
     link: "https://drive.google.com/file/d/1hr-y5vdO8ToErVSiEi7Ahs20v_YH7PvQ/view",
   },
   {
-    title: "The Complete Full-Stack Web Development",
+    title: "Udemy - The Complete Full-Stack Web Development",
     issuer: "Udemy",
     date: "May 2025",
     image: "/web-development.png",
@@ -244,7 +224,7 @@ export const certificatesData = [
     link: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-4e7a93fc-26ef-48c9-b6a3-e5cb837c98d8.pdf",
   },
   {
-    title: " Business Intelligence & Analytics Certification",
+    title: "NPTEL - Business Intelligence & Analytics Certification",
     issuer: "NPTEL",
     date: "May 2025",
     image: "/nptel-2.png",

@@ -23,9 +23,15 @@ const Contact = () => {
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset();
+      setTimeout(() => {
+    setResult("");
+  }, 5000);
     } else {
       console.log("Error", data);
       setResult(data.message);
+       setTimeout(() => {
+    setResult("");
+  }, 5000);
     }
   };
   return (
@@ -33,7 +39,7 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      id="contact"
+      id="contact" data-theme="white"
       className='w-full px-[12%] py-10 scroll-mt-20  bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'
     >
       <motion.h4
@@ -67,7 +73,7 @@ const Contact = () => {
       <motion.form
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
         onSubmit={onSubmit}
         viewport={{ once: true }}
         className="max-w-2xl mx-auto"
@@ -101,13 +107,13 @@ focus:ring-black duration-300"
           />
         </div>
         <motion.textarea
-          initial={{ y: 50, opacity: 0 }}
+          initial={{ y: 15, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+          transition={{ duration: 1.1, ease: "easeOut", delay: 0.16 }}
           rows="6"
           placeholder="Enter your message"
           required
-          className="font-Ovo w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md  bg-transparent transition-all focus:outline-none
+          className=" resize-none font-Ovo w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md  bg-transparent transition-all focus:outline-none
 
 focus:ring-1
 focus:ring-black duration-300
@@ -118,10 +124,10 @@ focus:border-black"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           type="submit"
-          className="font-Ovo py-3 px-8 w-max flex items-center justify-between gap-2 rounded-full mx-auto transition-all duration-500 bg-black text-white"
+          className="font-Outfit py-3 px-8 w-max flex items-center justify-between gap-2 rounded-full mx-auto transition-all duration-200 bg-black text-white"
         >
           Submit Now{" "}
-          <Image src={assets.right_arrow_bold} alt="" className="w-4" />{" "}
+          <Image src={assets.right_arrow_white} alt="" className="w-4" />{" "}
         </motion.button>
 
         <p className="mt-4">{result}</p>

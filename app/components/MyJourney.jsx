@@ -6,7 +6,7 @@ import { assets, journeyData } from "@/assets/assets";
 const MyJourney = ({ isDarkMode }) => {
   return (
     <motion.section
-      id="my-journey"
+      id="my-journey" data-theme="white"
       className="w-full px-[12%] py-16 relative scroll-mt-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}

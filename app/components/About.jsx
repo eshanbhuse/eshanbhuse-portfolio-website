@@ -9,7 +9,7 @@ const About = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      id="about"
+      id="about" data-theme="black"
       className="w-full px-[12%] py-10 scroll-mt-20 bg-darkTheme"
     >
       <motion.h4
@@ -54,18 +54,21 @@ const About = () => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2.5xl font-Ovo text-white">
-            Hello! I'm Eshan Bhuse, a Java Developer, pursued my B.Tech Degree from Sardar Patel Institute of Technology.
-            With a strong foundation in both
-            front-end and back-end technologies, I specialize in creating backend logic for web applications that deliver seamless user
-            experiences. My expertise includes proficiency in programming
+            Hello! I'm Eshan Bhuse, a Java Developer, pursued my B.Tech Degree
+            from Sardar Patel Institute of Technology. With a strong foundation
+            in both front-end and back-end technologies, I specialize in
+            creating backend logic for web applications that deliver seamless
+            user experiences. My expertise includes proficiency in programming
             languages such as JavaScript and Java, as well as frameworks like
-            React and Springboot. I also use Docker for containerization of appications, using Microservices for better code optimization and Redis for caching.  When I'm not
-            coding, I enjoy exploring new technologies, contributing to
-            open-source projects, and continuously enhancing my skills to stay
-            at the forefront of the ever-evolving tech landscape.
+            React and Springboot. I also use Docker for containerization of
+            appications, using Microservices for better code optimization and
+            Redis for caching. When I'm not coding, I enjoy exploring new
+            technologies, contributing to open-source projects, and continuously
+            enhancing my skills to stay at the forefront of the ever-evolving
+            tech landscape.
           </p>
 
-          <motion.ul
+          {/* <motion.ul
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
@@ -116,7 +119,145 @@ const About = () => {
                 <Image src={tool} alt="" className="w-5 sm:w-7" />
               </motion.li>
             ))}
-          </motion.ul>
+          </motion.ul> */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="mt-10"
+          >
+            {/* Stats Section */}
+            <div className="grid grid-cols-2 md:grid-cols-4 border border-white bg-black text-white overflow-hidden rounded-lg ">
+              <div className="relative py-10 text-center">
+                <h3 className="text-2xl font-bold">4+</h3>
+                <p className="text-sm text-white mt-1">Years Of Learning</p>
+
+                <div className=" absolute right-0 top-1/2 -translate-y-1/2 h-3/4 w-px bg-white/50"></div>
+                <div className="md:hidden absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-white/50"></div>
+              </div>
+
+              <div className="relative py-10 text-center">
+                <h3 className="text-2xl font-bold">15+</h3>
+                <p className="text-sm text-white mt-1">Projects Built</p>
+
+                <div className=" absolute right-0 top-1/2 -translate-y-1/2 h-3/4 w-px bg-white/50"></div>
+                <div className="md:hidden absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-white/50"></div>
+              </div>
+
+              <div className="relative py-10 text-center">
+                <h3 className="text-2xl font-bold">10+</h3>
+                <p className="text-sm text-white mt-1">Technologies</p>
+
+                <div className=" absolute right-0 top-1/2 -translate-y-1/2 h-3/4 w-px bg-white/50"></div>
+              </div>
+
+              <div className="py-10 text-center">
+                <h3 className="text-2xl font-bold">300+</h3>
+                <p className="text-sm text-white mt-1">DSA Problems</p>
+              </div>
+            </div>
+
+            {/* Tech Stack */}
+            {/* <div className="mt-10">
+    <h4 className="text-white text-xl font-semibold mb-5">
+      Tech Stack
+    </h4>
+
+    <div className="flex flex-wrap gap-3">
+      {[
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "Docker",
+        "Redis",
+        "MySQL",
+        "React",
+        "JavaScript",
+        "Git",
+        "AWS"
+      ].map((tech, index) => (
+        <span
+          key={index}
+          className="px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition duration-300"
+        >
+          {tech}
+        </span>
+      ))}
+    </div>
+  </div> */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 1 }}
+              className="mt-10"
+            >
+              <h4 className="text-white text-xl font-semibold mb-5">
+                Tech Stack
+              </h4>
+
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-y-3 text-white">
+                <div className="flex items-center gap-2">
+                  <span>•</span>
+                  <span className="font-Ovo ">Java</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span>•</span>
+                  <span className="font-Ovo">Spring Boot</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span>•</span>
+                  <span className="font-Ovo">Microservices</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span>•</span>
+                  <span className="font-Ovo">Docker</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span>•</span>
+                  <span className="font-Ovo">Redis</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span>•</span>
+                  <span className="font-Ovo">MySQL</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span>•</span>
+                  <span className="font-Ovo">React.js</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span>•</span>
+                  <span className="font-Ovo">Tailwind</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span>•</span>
+                  <span className="font-Ovo">Git & GitHub</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span>•</span>
+                  <span className="font-Ovo">AWS</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span>•</span>
+                  <span className="font-Ovo">REST APIs</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span>•</span>
+                  <span className="font-Ovo">Linux</span>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
         </motion.div>
       </motion.div>
     </motion.div>

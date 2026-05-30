@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div
       className="w-11/12 max-w-2.5xl text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-4 pt-20 md:pt-0 lg:pt-0 "
-      id="top"
+      id="top" data-theme="white"
     >
       <motion.div
         initial={{ scale: 0 }}
