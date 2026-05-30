@@ -2,16 +2,30 @@ import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "motion/react";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
+import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 const Contact = () => {
-  const [result, setResult] = useState("");
-
+  const router = useRouter();
+  // const [result, setResult] = useState("");
+  const [captchaToken, setCaptchaToken] = useState("");
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    if (!captchaToken) {
+      setResult("Please complete the captcha before submitting the form.");
+      return;
+    }
+    // setResult("Sending....");
     const formData = new FormData(event.target);
+    
+    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY);
 
-    formData.append("access_key", "0022519e-1337-4a26-b7b6-955dd5db5519");
+    formData.append("h-captcha-response", captchaToken);
+
+    const name = formData.get("name");
+    const subject = `${name} submitted form from your Portfolio website`;
+    formData.append("subject", subject);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -21,17 +35,24 @@ const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      // setResult("Form Submitted Successfully");
       event.target.reset();
-      setTimeout(() => {
-    setResult("");
-  }, 5000);
+      router.push("/thank-you");
+      // setTimeout(() => {
+      //   setResult("");
+      // }, 3000);
     } else {
       console.log("Error", data);
-      setResult(data.message);
-       setTimeout(() => {
-    setResult("");
-  }, 5000);
+      // setResult(data.message);
+      toast.error("Failed to send message.Please try again later.", {
+        style: {
+          background: "#fff",
+          color: "#000",
+          border: "1px solid #000",
+        },
+      }); // setTimeout(() => {
+      //   setResult("");
+      // }, 3000);
     }
   };
   return (
@@ -39,8 +60,9 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      id="contact" data-theme="white"
-      className='w-full px-[12%] py-10 scroll-mt-20  bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'
+      id="contact"
+      data-theme="white"
+      className="w-full px-[12%] py-10 scroll-mt-20  bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none"
     >
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
@@ -120,6 +142,12 @@ focus:ring-black duration-300
 focus:border-black"
           name="message"
         ></motion.textarea>
+        <div className="flex justify-center my-6">
+          <HCaptcha
+            sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_ACCESS_KEY}
+            onVerify={(token) => setCaptchaToken(token)}
+          />
+        </div>
         <motion.button
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
@@ -130,7 +158,7 @@ focus:border-black"
           <Image src={assets.right_arrow_white} alt="" className="w-4" />{" "}
         </motion.button>
 
-        <p className="mt-4">{result}</p>
+        {/* <p className="mt-4">{result}</p> */}
       </motion.form>
     </motion.div>
   );
