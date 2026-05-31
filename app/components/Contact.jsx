@@ -27,7 +27,7 @@ const Contact = () => {
     formData.append("h-captcha-response", captchaToken);
 
     const name = formData.get("name");
-    const subject = `${name} submitted form from your Portfolio website`;
+    const subject = `${name} submitted the form from your Portfolio website`;
     formData.append("subject", subject);
 
     const response = await fetch("https://api.web3forms.com/submit", {

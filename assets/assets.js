@@ -203,7 +203,7 @@ export const certificatesData = [
     link: "https://drive.google.com/file/d/1hr-y5vdO8ToErVSiEi7Ahs20v_YH7PvQ/view",
   },
   {
-    title: "Udemy - The Complete Full-Stack Web Development",
+    title: "The Complete Full-Stack Web Development",
     issuer: "Udemy",
     date: "May 2025",
     image: "/web-development.png",
@@ -224,7 +224,7 @@ export const certificatesData = [
     link: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-4e7a93fc-26ef-48c9-b6a3-e5cb837c98d8.pdf",
   },
   {
-    title: "NPTEL - Business Intelligence & Analytics Certification",
+    title: "Business Intelligence & Analytics Certification",
     issuer: "NPTEL",
     date: "May 2025",
     image: "/nptel-2.png",
