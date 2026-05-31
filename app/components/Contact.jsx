@@ -145,9 +145,11 @@ focus:border-black"
         <div className="flex justify-center my-6">
           <HCaptcha
             sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_ACCESS_KEY}
+            
             onVerify={(token) => setCaptchaToken(token)}
           />
         </div>
+        
         <motion.button
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
