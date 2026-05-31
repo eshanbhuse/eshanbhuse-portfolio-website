@@ -92,16 +92,16 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'AIVADENT-AI-Enabled Clinical  Support',
+        title: 'Expense Tracker',
         description: 'Web Development',
         bgImage: '/work-1.png',
-        link: 'https://aivadent.info/'
+        link: 'https://eshanbhuse-expense-tracker.online/'
     },
     {
-        title: 'AI Powered Interview Prep',
-        description: 'Web Development',
+        title: 'Vision-Based Cursor Navigation System through Dynamic Mouse Gestures',
+        description: 'Web Development and Machine Learning',
         bgImage: '/work-2.png',
-        link: 'https://al-based-interview-preparation-frontend-71c1.onrender.com/'
+        link: 'https://github.com/eshanbhuse/Vision-Based-Cursor-Navigation-through-Dynamic-Mouse-Gestures'
     },
     {
         title: 'Vampyrion-Eclipse (Game)',
