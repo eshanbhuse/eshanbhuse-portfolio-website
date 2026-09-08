@@ -58,7 +58,7 @@ const Header = () => {
           whileInView={{ y: 0, opacity: 1 }}
           whileHover={{ y: -6 }}
           transition={{ duration: 0.2}}
-          href="/eshanbhuse-resume.pdf"
+          href="/eshanbhuse_resume.pdf"
           download
           className="group  px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white transition-transform duration-300 hover:-translate-y-1"
         >
