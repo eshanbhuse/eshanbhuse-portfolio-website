@@ -95,7 +95,7 @@ export const workData = [
         title: 'Expense Tracker',
         description: 'Web Development',
         bgImage: '/work-1.png',
-        link: 'https://eshanbhuse-expense-tracker.online/'
+        link: 'https://expense-tracker-eshan-bhuses-projects.vercel.app/'
     },
     {
         title: 'Vision-Based Cursor Navigation System through Dynamic Mouse Gestures',
